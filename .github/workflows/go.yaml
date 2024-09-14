@@ -4,6 +4,7 @@ on:
   push:
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -15,4 +16,4 @@ jobs:
         go-versions: '1.22'
 
     - name: Build
-      run: go buils -v .
+      run: go build -v .
